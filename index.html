@@ -163,7 +163,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <button id="reserveButton" role="button" class="btn btn-block nav-link btn-warning" href="#">
+                    <button id="reservationButton" role="button" class="btn btn-block nav-link btn-warning" href="#">
                         Reserve Table
                 </button>
                 </div>
@@ -315,6 +315,8 @@
     <script>
         $(document).ready(function() {
             $('#mycarousel').carousel({ interval: 2000 });
+
+            // Carousel pause/resume buttons
             $('#carouselButton').click(function() {
                 if ($('#carouselButton').children('span').hasClass('fa-pause')) {
                     $('#mycarousel').carousel('pause');
@@ -325,6 +327,16 @@
                     $('#carouselButton').children('span').removeClass('fa-play')
                     $('#carouselButton').children('span').addClass('fa-pause')
                 }
+            });
+
+            // Open reservation modal
+            $('#reservationButton').click(function() {
+                $('#reservationModal').modal('show')
+            });
+
+            // Open login modal
+            $('#loginLink').click(function () {
+                $('#loginModal').modal('show')
             });
         });
     </script>
