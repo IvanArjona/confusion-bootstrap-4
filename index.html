@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a href="#" data-toggle="modal" data-target="#loginModal">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -230,10 +230,10 @@
                                 <div class="col-md-10">
                                     <div class="btn-group btn-group-toggle" role="group" data-toggle="buttons">
                                         <label class="btn btn-success active">
-                                            <input type="radio" name="section" id="section-non-smoking" checked> Non-Smoking
+                                            <input type="radio" name="section" id="section-non-smoking" autocomplete="off" checked> Non-Smoking
                                         </label>
                                         <label class="btn btn-danger">
-                                            <input type="radio" name="section" id="section-smoking"> Smoking
+                                            <input type="radio" name="section" id="section-smoking" autocomplete="off"> Smoking
                                         </label>
                                     </div>
                                 </div>
@@ -311,11 +311,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
 </body>
 
 </html>
